@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 10 - Modal</title>
+    <link rel="stylesheet" href="ex10.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Modal de Notification</h1>
+        <button id="ouvrirModalBtn" class="btn-primaire">Ouvrir la Modal</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="maModal" class="modal">
+        <div class="modal-contenu">
+            <div class="modal-entete">
+                <h2>Notification Importante</h2>
+                <span class="modal-fermer">&times;</span>
+            </div>
+            <div class="modal-corps">
+                <p>Ceci est une boîte de dialogue modale. Vous pouvez utiliser ce composant pour afficher des messages importants à vos utilisateurs.</p>
+                <p>Les modales sont utiles pour:</p>
+                <ul>
+                    <li>Afficher des messages d'erreur</li>
+                    <li>Confirmer des actions</li>
+                    <li>Afficher des formulaires</li>
+                    <li>Présenter des informations supplémentaires</li>
+                </ul>
+            </div>
+            <div class="modal-pied">
+                <button id="fermerModalBtn" class="btn-secondaire">Fermer</button>
+                <button class="btn-primaire">Accepter</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="ex10.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 9 - To-do List</title>
+    <link rel="stylesheet" href="ex9.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>📝 To-do List</h1>
+        
+        <div class="ajout-tache">
+            <input type="text" id="inputTache" placeholder="Entrez une nouvelle tâche...">
+            <button id="ajouterBtn">Ajouter</button>
+        </div>
+        
+        <div class="filtres">
+            <button class="filtre-btn active" data-filtre="toutes">Toutes</button>
+            <button class="filtre-btn" data-filtre="actives">Actives</button>
+            <button class="filtre-btn" data-filtre="terminees">Terminées</button>
+        </div>
+        
+        <ul id="listeTaches">
+            <!-- Les tâches seront ajoutées ici -->
+        </ul>
+        
+        <div class="stats">
+            <p>Tâches restantes: <span id="compteurTaches">0</span></p>
+        </div>
+    </div>
+    <script src="ex9.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 12 - Responsive avec JavaScript</title>
+    <link rel="stylesheet" href="ex12.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📱 Responsive avec JavaScript</h1>
+            <p class="subtitle">La page s'adapte dynamiquement à la taille de l'écran</p>
+        </header>
+
+        <div class="info-panel">
+            <div class="info-item">
+                <span>Largeur écran:</span>
+                <strong id="screenWidth">0</strong>px
+            </div>
+            <div class="info-item">
+                <span>Mode détecté:</span>
+                <strong id="screenMode">Desktop</strong>
+            </div>
+            <div class="info-item">
+                <span>Éléments visibles:</span>
+                <strong id="visibleItems">6</strong>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="layout-controls">
+                <h2>Contrôles de Layout</h2>
+                <div class="buttons">
+                    <button id="toggleSidebar">Afficher/Masquer Sidebar</button>
+                    <button id="changeLayout">Changer le Layout</button>
+                    <button id="addItem">Ajouter un Élément</button>
+                    <button id="removeItem">Retirer un Élément</button>
+                </div>
+            </div>
+
+            <div class="layout-container">
+                <div class="sidebar" id="sidebar">
+                    <h3>Sidebar</h3>
+                    <p>Ce contenu est visible sur les écrans larges</p>
+                    <ul>
+                        <li>Élément 1</li>
+                        <li>Élément 2</li>
+                        <li>Élément 3</li>
+                    </ul>
+                </div>
+
+                <div class="main-content">
+                    <h2>Contenu Principal</h2>
+                    <div class="items-grid" id="itemsContainer">
+                        <!-- Les éléments seront ajoutés dynamiquement -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="dynamic-content">
+                <h2>Contenu Dynamique</h2>
+                <p id="responsiveMessage">Ce message change selon la taille de l'écran</p>
+                <div class="dynamic-items" id="dynamicItems">
+                    <!-- Contenu ajouté dynamiquement -->
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Redimensionnez la fenêtre pour voir les changements dynamiques</p>
+        </footer>
+    </div>
+
+    <script src="ex12.js"></script>
+</body>
+</html>
+      

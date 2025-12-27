@@ -1,0 +1,22 @@
+#monTexte {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 600px;
+    transition: opacity 0.3s ease;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

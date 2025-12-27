@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 11 - Filtrage</title>
+    <link rel="stylesheet" href="ex11.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Filtrage de Produits</h1>
+        
+        <div class="recherche-container">
+            <input type="text" id="rechercheInput" placeholder="Rechercher un produit...">
+            <div class="info">
+                <span id="compteurProduits">6</span> produits trouvés
+            </div>
+        </div>
+        
+        <div class="produits-grid" id="listeProduits">
+            <!-- Les produits seront chargés ici -->
+        </div>
+        
+        <div class="message-vide" id="messageVide" style="display: none;">
+            <p>Aucun produit ne correspond à votre recherche.</p>
+            <button id="reinitialiserBtn">Réinitialiser la recherche</button>
+        </div>
+    </div>
+    <script src="ex11.js"></script>
+</body>
+</html>

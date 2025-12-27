@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4 - Calculatrice</title>
+    <link rel="stylesheet" href="ex4.css">
+</head>
+<body>
+    <header>
+        <h1>Exercice 4 - Calculatrice</h1>
+        <p class="description">Cette page contient deux calculatrices différentes. La première utilise des champs de saisie et des boutons d'opérations, tandis que la seconde est une calculatrice complète avec un pavé numérique.</p>
+    </header>
+    
+    <div class="calculators-container">
+        <!-- Première calculatrice (avec champs de saisie) -->
+        <section class="calculator-section input-calculator">
+            <h2 class="section-title">1. Calculatrice avec champs de saisie</h2>
+            
+            <div class="input-group">
+                <label for="number1">Premier nombre :</label>
+                <input type="number" id="number1" placeholder="Entrez un nombre">
+            </div>
+            
+            <div class="input-group">
+                <label for="number2">Deuxième nombre :</label>
+                <input type="number" id="number2" placeholder="Entrez un nombre">
+            </div>
+            
+            <div class="operations">
+                <button class="operation-btn" data-operation="add">+</button>
+                <button class="operation-btn" data-operation="subtract">-</button>
+                <button class="operation-btn" data-operation="multiply">×</button>
+                <button class="operation-btn" data-operation="divide">÷</button>
+            </div>
+            
+            <div class="result-container">
+                <div class="result-label">Résultat :</div>
+                <div id="result1">-</div>
+            </div>
+        </section>
+        
+        <!-- Deuxième calculatrice (avec pavé numérique) -->
+        <section class="calculator-section numeric-calculator">
+            <h2 class="section-title">2. Calculatrice complète</h2>
+            
+            <div class="calculator">
+                <div class="calculator-display">
+                    <div class="previous-operation" id="previous-operation"></div>
+                    <div class="current-operation" id="current-operation">0</div>
+                </div>
+                
+                <div class="calculator-buttons">
+                    <button class="calc-btn clear">C</button>
+                    <button class="calc-btn operator" data-operation="divide">÷</button>
+                    <button class="calc-btn operator" data-operation="multiply">×</button>
+                    <button class="calc-btn operator" data-operation="subtract">-</button>
+                    
+                    <button class="calc-btn number" data-number="7">7</button>
+                    <button class="calc-btn number" data-number="8">8</button>
+                    <button class="calc-btn number" data-number="9">9</button>
+                    <button class="calc-btn operator" data-operation="add">+</button>
+                    
+                    <button class="calc-btn number" data-number="4">4</button>
+                    <button class="calc-btn number" data-number="5">5</button>
+                    <button class="calc-btn number" data-number="6">6</button>
+                    <button class="calc-btn equals" rowspan="2">=</button>
+                    
+                    <button class="calc-btn number" data-number="1">1</button>
+                    <button class="calc-btn number" data-number="2">2</button>
+                    <button class="calc-btn number" data-number="3">3</button>
+                    
+                    <button class="calc-btn number zero" data-number="0">0</button>
+                    <button class="calc-btn decimal">.</button>
+                </div>
+            </div>
+            
+            <div class="example-calc">
+                <h3>Exemple : 5 + 9 = 14</h3>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Exercice 4 - Calculatrice avec HTML, CSS et JavaScript séparés</p>
+    </footer>
+    
+    <script src="ex4.js"></script>
+</body>
+</html>
