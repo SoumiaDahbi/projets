@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3 - Tri de nombres</title>
+    <link rel="stylesheet" href="ex3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Exercice 3 : Tri d'une liste de nombres</h1>
+            <p>Fonction qui prend une liste de nombres et retourne la liste triée</p>
+        </header>
+
+        <main>
+            <div class="content">
+                <div class="input-section">
+                    <h2>Saisie des nombres</h2>
+                    <div class="input-group">
+                        <label for="number-input">Ajouter un nombre :</label>
+                        <div class="input-row">
+                            <input type="number" id="number-input" placeholder="Entrez un nombre">
+                            <button id="add-btn">Ajouter</button>
+                            <button id="clear-btn">Effacer tout</button>
+                        </div>
+                        <div class="input-row">
+                            <button id="generate-btn">Générer 10 nombres aléatoires</button>
+                            <button id="sort-btn">Trier la liste</button>
+                        </div>
+                    </div>
+                    
+                    <div class="list-display">
+                        <h3>Liste actuelle :</h3>
+                        <div class="numbers-container" id="numbers-container">
+                            <p class="empty-message">Aucun nombre ajouté. Ajoutez des nombres ou générez une liste aléatoire.</p>
+                        </div>
+                        <div class="list-info">
+                            <p>Nombre d'éléments : <span id="count">0</span></p>
+                            <p>Total : <span id="sum">0</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="result-section">
+                    <h2>Liste triée</h2>
+                    <div class="result-display" id="result-container">
+                        <p class="placeholder">La liste triée s'affichera ici</p>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h3>Information</h3>
+                        <p>Cette application utilise la fonction <strong>trier()</strong> qui prend un tableau de nombres en paramètre et retourne un nouveau tableau trié en ordre croissant.</p>
+                        <p>L'algorithme utilisé est le tri à bulles (bubble sort) pour démontrer le processus de tri étape par étape.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>TP JavaScript - Exercice 3</p>
+        </footer>
+    </div>
+
+    <script src="ex3.js"></script>
+</body>
+</html>

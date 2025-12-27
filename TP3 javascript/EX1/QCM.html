@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP JavaScript - QCM Interactif</title>
+    <link rel="stylesheet" href="QCM.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-graduation-cap"></i> QCM Interactif - JavaScript</h1>
+            <p class="subtitle">Testez vos connaissances en développement web</p>
+        </header>
+
+        <div class="timer-section">
+            <div class="timer">
+                <i class="fas fa-clock"></i>
+                <span id="timer">15:00</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <form id="qcmForm">
+            <!-- Question 1 - Choix multiple -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Question 1</span>
+                    <span class="question-type">(Choix multiples)</span>
+                </div>
+                <p class="question-text">Quels sont les langages côté client pour le développement web ?</p>
+                <div class="options">
+                    <label class="option">
+                        <input type="checkbox" name="q1" value="a">
+                        <span class="checkmark"></span>
+                        <span class="option-text">HTML</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="q1" value="b">
+                        <span class="checkmark"></span>
+                        <span class="option-text">CSS</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="q1" value="c">
+                        <span class="checkmark"></span>
+                        <span class="option-text">JavaScript</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="q1" value="d">
+                        <span class="checkmark"></span>
+                        <span class="option-text">PHP</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 2 - Choix simple -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Question 2</span>
+                    <span class="question-type">(Choix simple)</span>
+                </div>
+                <p class="question-text">Quelle méthode JavaScript permet de sélectionner un élément par son ID ?</p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q2" value="a">
+                        <span class="checkmark radio"></span>
+                        <span class="option-text">document.querySelector()</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="b">
+                        <span class="checkmark radio"></span>
+                        <span class="option-text">document.getElementById()</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="c">
+                        <span class="checkmark radio"></span>
+                        <span class="option-text">document.getElementsByClassName()</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="d">
+                        <span class="checkmark radio"></span>
+                        <span class="option-text">document.getElementsByTagName()</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 3 - Choix multiple -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Question 3</span>
+                    <span class="question-type">(Choix multiples)</span>
+                </div>
+                <p class="question-text">Quelles sont les méthodes pour manipuler le DOM en JavaScript ?</p>
+                <div class="options">
+                    <label class="option">
+                        <input type="checkbox" name="q3" value="a">
+                        <span class="checkmark"></span>
+                        <span class="option-text">innerHTML</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="q3" value="b">
+                        <span class="checkmark"></span>
+                        <span class="option-text">getElementById()</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="q3" value="c">
+                        <span class="checkmark"></span>
+                        <span class="option-text">querySelector()</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="q3" value="d">
+                        <span class="checkmark"></span>
+                        <span class="option-text">console.log()</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 4 - Choix simple -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Question 4</span>
+                    <span class="question-type">(Choix simple)</span>
+                </div>
+                <p class="question-text">Quel événement se déclenche quand un utilisateur clique sur un élément ?</p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q4" value="a">
+                        <span class="checkmark radio"></span>
+                        <span class="option-text">onmouseover</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="b">
+                        <span class="checkmark radio"></span>
+                        <span class="option-text">onclick</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="c">
+                        <span class="checkmark radio"></span>
+                        <span class="option-text">onkeydown</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="d">
+                        <span class="checkmark radio"></span>
+                        <span class="option-text">onload</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 5 - Choix multiple -->
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-number">Question 5</span>
+                    <span class="question-type">(Choix multiples)</span>
+                </div>
+                <p class="question-text">Quels sont les types de stockage local en JavaScript ?</p>
+                <div class="options">
+                    <label class="option">
+                        <input type="checkbox" name="q5" value="a">
+                        <span class="checkmark"></span>
+                        <span class="option-text">localStorage</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="q5" value="b">
+                        <span class="checkmark"></span>
+                        <span class="option-text">sessionStorage</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="q5" value="c">
+                        <span class="checkmark"></span>
+                        <span class="option-text">cookies</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="q5" value="d">
+                        <span class="checkmark"></span>
+                        <span class="option-text">indexedDB</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="resetBtn" class="btn btn-reset">
+                    <i class="fas fa-redo"></i> Initialiser le QCM
+                </button>
+                <button type="button" id="showAnswersBtn" class="btn btn-answers">
+                    <i class="fas fa-eye"></i> Voir les réponses
+                </button>
+                <button type="button" id="showResultBtn" class="btn btn-result">
+                    <i class="fas fa-chart-bar"></i> Voir mon résultat
+                </button>
+            </div>
+        </form>
+
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-value" id="answeredCount">0</span>
+                <span class="stat-label">Questions répondues</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="remainingTime">15:00</span>
+                <span class="stat-label">Temps restant</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="progressPercent">0%</span>
+                <span class="stat-label">Progression</span>
+            </div>
+        </div>
+
+        <footer>
+            <p>TP JavaScript - QCM Interactif | ENSA Fès</p>
+        </footer>
+    </div>
+
+    <!-- Fenêtre modale pour les résultats -->
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="QCM.js"></script>
+</body>
+</html>

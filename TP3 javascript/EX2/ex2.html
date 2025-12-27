@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2 - Validation d'email</title>
+    <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Exercice 2 : Validation d'email</h1>
+            <p>Vérifier si l'email tapé par l'utilisateur est valide</p>
+        </header>
+
+        <main>
+            <div class="validation-box">
+                <div class="input-group">
+                    <label for="email">Entrez votre adresse email :</label>
+                    <input type="text" id="email" placeholder="exemple@domaine.com">
+                    <button id="validate-btn">Valider l'email</button>
+                </div>
+                
+                <div class="result" id="result">
+                    <p class="placeholder">Le résultat de validation s'affichera ici</p>
+                </div>
+                
+                <div class="rules">
+                    <h3>Règles de validation :</h3>
+                    <ul>
+                        <li>L'email doit contenir le caractère @</li>
+                        <li>Il doit y avoir au moins un caractère (lettre ou chiffre) avant le @</li>
+                        <li>Il doit y avoir un point après le @</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>TP JavaScript - Exercice 2</p>
+        </footer>
+    </div>
+
+    <script src="ex2.js"></script>
+</body>
+</html>

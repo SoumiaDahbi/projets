@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4 - Somme des temps</title>
+    <link rel="stylesheet" href="ex4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TP - JavaScript : Exercice 4</h1>
+        <p>Ecrire un programme qui détermine la somme de trois mesures de temps données en heures, minutes et secondes.</p>
+        
+        <table class="input-table">
+            <tr>
+                <td>Entrer le premier temps :</td>
+                <td class="time-input">
+                    Heure(s) <input type="number" id="h1" min="0" value="2">
+                    Minute(s) <input type="number" id="m1" min="0" value="2333">
+                    <br>
+                    Seconde(s) <input type="number" id="s1" min="0" value="2">
+                </td>
+            </tr>
+            <tr>
+                <td>Entrer le Deuxième temps :</td>
+                <td class="time-input">
+                    Heure(s) <input type="number" id="h2" min="0" value="23">
+                    Minute(s) <input type="number" id="m2" min="0" value="2">
+                    <br>
+                    Seconde(s) <input type="number" id="s2" min="0" value="1">
+                </td>
+            </tr>
+            <tr>
+                <td>Entrer le troisième temps :</td>
+                <td class="time-input">
+                    Heure(s) <input type="number" id="h3" min="0" value="233">
+                    Minute(s) <input type="number" id="m3" min="0" value="23">
+                    <br>
+                    Seconde(s) <input type="number" id="s3" min="0" value="23344">
+                </td>
+            </tr>
+        </table>
+
+        <div class="result">
+            <h3>Total des trois temps :</h3>
+            <div id="result">
+                <!-- Les résultats apparaîtront ici -->
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="calculateBtn">Somme</button>
+            <button id="clearBtn">Effacer</button>
+        </div>
+    </div>
+
+    <script src="ex4.js"></script>
+</body>
+</html>
